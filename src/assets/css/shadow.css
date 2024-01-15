@@ -1,0 +1,10 @@
+.boxShadow {
+    backdrop-filter: blur(60.87999725341797px);
+    box-shadow:0px 48px 48px 0 rgba(60, 49, 46,.56);
+}
+.textShadow{
+    text-shadow: 0px 0px 12.176px #FFF;
+}
+#root{
+    background-color: black;
+}
