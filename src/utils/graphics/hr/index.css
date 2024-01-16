@@ -1,0 +1,5 @@
+.hr_unique_styles {
+    opacity: 0.32;
+    background: rgb(204,139,139);
+    background: radial-gradient(circle, rgba(204,139,139,1) 50%, rgba(147,177,166,0) 100%);
+}
