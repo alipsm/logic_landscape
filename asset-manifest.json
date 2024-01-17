@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/logic_landscape/static/css/main.59a9b205.css",
-    "main.js": "/logic_landscape/static/js/main.d61da9a8.js",
+    "main.js": "/logic_landscape/static/js/main.dee941b6.js",
     "static/media/contributer.jpeg": "/logic_landscape/static/media/contributer.caadd19a1986da714c95.jpeg",
     "index.html": "/logic_landscape/index.html",
     "main.59a9b205.css.map": "/logic_landscape/static/css/main.59a9b205.css.map",
-    "main.d61da9a8.js.map": "/logic_landscape/static/js/main.d61da9a8.js.map"
+    "main.dee941b6.js.map": "/logic_landscape/static/js/main.dee941b6.js.map"
   },
   "entrypoints": [
     "static/css/main.59a9b205.css",
-    "static/js/main.d61da9a8.js"
+    "static/js/main.dee941b6.js"
   ]
 }
