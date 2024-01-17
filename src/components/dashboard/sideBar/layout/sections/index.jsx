@@ -5,7 +5,7 @@ import DropDown from '../../ui/dropdown'
 export default function Sections() {
   return (
       <DropDown title={"بخش ها"} liItems={[
-        <Card />
+        <Card text={"غذا خوردن فیلسوف ها"} link={"multithreading"} ico={"fa-utensils"}/>
       ]} />
   )
 }
