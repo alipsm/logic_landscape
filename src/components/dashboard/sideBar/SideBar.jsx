@@ -8,7 +8,7 @@ import Banner from './layout/banner'
 
 export default function SideBar() {
   return (
-    <div className=' flex flex-col justify-between boxShadow relative h-full w-52 bg-maroon rounded-3xl px-4 py-5'>
+    <div className=' flex flex-col relative min-w-52 justify-between boxShadow h-full w-52 bg-maroon rounded-3xl px-4 py-5'>
       <div>
         <MacControllerAnimation />
         <AdminCard />
