@@ -11,7 +11,7 @@ export default function MacControllerAnimation() {
           <motion.div
             initial={{ y: -5, opacity: 0 }}
             animate={{ y: 0, opacity: 1 }}
-            transition={{ duration: 1, delay: i*.2 }}
+            transition={{ duration: .5, delay: (i*.2)+1.2 }}
           >
             <span key={item} className={`${style} ${item}`}></span>
           </motion.div>
