@@ -9,8 +9,8 @@ function App() {
       <Routes>
         <Route path="/dashboard/*" element={<Dashboard />}>
           <Route path="info" element={<Info />} />
-          <Route path={Multithreading.name} element={<Multithreading />} />
-          <Route path="*" element={<Navigate to={"/dashboard/info"} replace/>} />
+          <Route path={"multithreading"} element={<Multithreading />} />
+          <Route path="*" element={<Navigate to={"info"} replace/>} />
         </Route>
         <Route path="*" element={<Navigate to={"/dashboard"} replace/>} />
       </Routes>
