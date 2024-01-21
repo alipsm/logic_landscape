@@ -1,15 +1,14 @@
 import React from 'react'
 
-DropDown.defaultProps = {
+ListItems.defaultProps = {
     title: "my title",
     liItems: ["item one", "item two"]
 }
-export default function DropDown({ title, liItems }) {
+export default function ListItems({ title, liItems }) {
     return (
         <div className="flex flex-col items-end text-xs my-2">
             <h3 className=' text-white opacity-35 py-1 cursor-default'>
                 <strong>
-
                     {title}
                 </strong>
             </h3>
@@ -17,7 +16,7 @@ export default function DropDown({ title, liItems }) {
 
                 {
                     liItems.map((item, index) => (
-                        <li key={index} className='hover:opacity-80 transition-opacity cursor-pointer'>{item}</li>
+                        <li key={index}>{item}</li>
                     ))
                 }
             </ul>
