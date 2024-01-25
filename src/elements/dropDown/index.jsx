@@ -3,11 +3,12 @@ import { Menu, Transition } from '@headlessui/react'
 
 DropDonw.defaultProps = {
   title: "my title",
-  items: ["item one", "item two"]
+  items: ["item one", "item two"],
+  defautlIndexItem:0
 }
 
-export default function DropDonw({ title, items, getItem }) {
-  const [item, setItem] = useState(items?.[0])
+export default function DropDonw({ title, items, getItem ,defautlIndexItem}) {
+  const [item, setItem] = useState(items?.[defautlIndexItem])
   function handleSelectItem(item) {
     setItem(item)
     getItem?.(item)
