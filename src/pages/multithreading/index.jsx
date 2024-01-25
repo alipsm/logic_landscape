@@ -7,6 +7,9 @@ import multithreadingHelper from "./helpers/index"
 const { getRandomNum, isBusy, isWait, isFree, isLock, roundToDown, getNumberAtString, getPointsWithDeg, getCurrentElementRotation } = multithreadingHelper
 
 var timeInterval;
+
+// TODO: Dirty code (extract the modules from inside this section)
+
 export default function Multithreading() {
 
     const DEFAULT_DIFFICULT_VALUE = 15
@@ -32,6 +35,7 @@ export default function Multithreading() {
         update: true
     })
 
+    // init circles
     useEffect(() => {
         handleCirclesCount(24, myCircles1.update)
     }, [])
@@ -46,7 +50,7 @@ export default function Multithreading() {
     }, [myCircles1.update])
 
     function DI(mainCircleData) {
-        var { circles, monitorprocessIndex, update, processDifficult, waiting, time, spinningStage } = mainCircleData
+        var { circles, update, processDifficult, waiting, time, spinningStage } = mainCircleData
         let num = getRandomNum(3)
         circles = handleRandomActivity(circles, waiting, spinningStage)
         num = getRandomNum(3)
@@ -56,8 +60,6 @@ export default function Multithreading() {
             circles = getCircles
         }
         circles = startChecking(circles)
-        // circles = checkLockProcess(circles)
-
 
         setMyCircles1((prevMyCircles) => ({
             ...prevMyCircles,
@@ -77,7 +79,6 @@ export default function Multithreading() {
         if (getProcessesIndex.length === 0)
             return undefined
 
-        // let randomNum1 = getRandomNum(DEFAULT_DIFFICULT_VALUE * processDifficult)
         let randomNum1 = getRandomNum(((DEFAULT_DIFFICULT_VALUE + (getNumberAtString(myCircles1.time) / 2)) * (processDifficult)))
         let randomNum2 = getRandomNum(((DEFAULT_DIFFICULT_VALUE - (getNumberAtString(myCircles1.time) / 2)) / processDifficult))
         if (randomNum1 > randomNum2)
@@ -85,11 +86,8 @@ export default function Multithreading() {
 
             let getAllCircles;
             getAllCircles = [...circles]
-            let round= Math.ceil(myCircles1.circles.length / 10)
-            console.log('round', round)
         for (let index = 0; index < Math.ceil(myCircles1.circles.length / 20); index++) {
             const getRandomProcessIndex = getProcessesIndex[getRandomNum(getProcessesIndex.length - 1)] || getProcessesIndex[0]
-            // getProcessesIndex = getProcessesIndex.filter(item => item != getRandomProcessIndex)
             const { deg } = getAllCircles[getRandomProcessIndex]
             getAllCircles[getRandomProcessIndex] = { deg, status: "free" }
         }
