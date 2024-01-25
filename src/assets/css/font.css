@@ -1,0 +1,16 @@
+@font-face {
+    font-family: Samim;
+    src: url(../font/Samim.ttf);
+}
+@font-face {
+    font-family: 'Samim Bold';
+    src: url(../font/Samim-Bold.ttf);
+}
+
+* {
+    font-family:Samim , sans-serif;
+}
+
+h1,h2,h3{
+    font-family:'Samim Bold',sans-serif;
+}

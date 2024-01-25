@@ -1,4 +1,28 @@
 @import url(./shadow.css);
+@import url(./font.css);
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+::-webkit-scrollbar {
+    width: 5px !important;
+    height: 5px;
+}
+ 
+/* Track */
+::-webkit-scrollbar-track {
+    background: #0f090c8f;
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+    /* background: #888; */
+    background: #0f090c8f;
+
+    border-radius: 4px;
+}
+ 
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: black;
+}
