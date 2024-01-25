@@ -1,23 +1,24 @@
-import React from 'react'
+import React, { useState } from 'react'
 import AdminCard from './layout/adminCard'
-import MacControllerAnimation from '../../../animations/macController'
+import MacBurgerMenu from './ui/macBurgerMenu'
 import Hr from '../../../utils/graphics/hr/Hr'
 import Contributers from './layout/contributers'
 import Sections from './layout/sections'
 import Banner from './layout/banner'
 
 export default function SideBar() {
+  const [minimull, setMinimull] = useState(true)
   return (
-    <div className=' flex flex-col relative min-w-52 justify-between boxShadow h-full w-52 bg-maroon rounded-3xl px-4 py-5'>
+    <div className={`flex flex-col relative justify-between boxShadow h-full ${minimull ? " w-16 px-2 py-2 rounded-2xl" : "min-w-52 w-52 px-4 py-5 rounded-3xl"} bg-maroon transition-all`}>
       <div>
-        <MacControllerAnimation />
-        <AdminCard />
+        <MacBurgerMenu minimull={minimull} setMinimull={setMinimull} />
+        <AdminCard minimull={minimull} />
         <Hr />
-        <Sections />
+        <Sections minimull={minimull} />
         <Hr />
-        <Contributers />
+        <Contributers minimull={minimull} />
       </div>
-      <Banner />
+      <Banner minimull={minimull} />
     </div>
   )
 }
