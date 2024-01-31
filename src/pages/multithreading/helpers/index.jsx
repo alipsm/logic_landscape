@@ -6,7 +6,7 @@ const multithreadingHelper = (() => {
     const isWait = (item) => item?.status === "wait" || item === "wait"
     const isFree = (item) => item?.status === "free" || item === "free"
     const isLock = (item) => item?.status === "lock" || item === "lock"
-    const roundToDown = (num) => Math.floor(num / 10) * 10;
+    const roundToDown = (num) => Math.floor(num / 5) * 5;
     const getNumberAtString = (str) => str?.match(/[\d\.]+/g)?.join("")
     const getPointsWithDeg = (mainDeg, pointDeg) => mainDeg + 10 >= pointDeg & mainDeg <= pointDeg
 

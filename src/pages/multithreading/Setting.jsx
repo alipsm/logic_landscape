@@ -33,7 +33,7 @@ export default function Setting({ getDropDownValue }) {
                             <DropDown title={"تعداد پردازش ها:"} items={[3, 6, 12, 24, 48, 96]} defautlIndexItem={3} getItem={(value) => getDropDownValue("thread", value)} />,
                             <DropDown title={"میزان پردازش ها:"} items={["سبک", "معمولی", "سنگین", "مشغول"]} defautlIndexItem={1} getItem={(value) => getDropDownValue("processDifficult", value)} />,
                             <DropDown title={"درخواست پردازش:"} items={["کم", "متوسط", "زیاد", "مشغول"]} defautlIndexItem={1} getItem={(value) => getDropDownValue("waiting", value)} />,
-                            <DropDown title={"سرعت سرکشی:"} items={[...("1s,2s,4s,8s,16s,32s".split(","))]} defautlIndexItem={3} getItem={(value) => getDropDownValue("time", value)} />,
+                            <DropDown title={"سرعت سرکشی:"} items={[...("2s,4s,8s,16s,32s".split(","))]} defautlIndexItem={3} getItem={(value) => getDropDownValue("time", value)} />,
                         ]} />
                         <Hr />
                         <ListItems title={"تنظیمات اضافی"} liItems={[
