@@ -9,7 +9,6 @@ const MultithreadingModules = (() => {
 
 
     // Thay are PRIVATE modules
-
     function _finishprocess(circles, processDifficult, time) {
         let getProcessesIndex = []
         circles.forEach((item, i) => {

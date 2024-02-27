@@ -6,9 +6,9 @@ const multithreadingHelper = (() => {
     const isWait = (item) => item?.status === "wait" || item === "wait"
     const isFree = (item) => item?.status === "free" || item === "free"
     const isLock = (item) => item?.status === "lock" || item === "lock"
-    const roundToDown = (num) => Math.floor(num / 5) * 5;
+    const roundToDown = (num) => Math.floor(num / 2) * 2;
     const getNumberAtString = (str) => str?.match(/[\d\.]+/g)?.join("")
-    const getPointsWithDeg = (mainDeg, pointDeg) => mainDeg + 10 >= pointDeg & mainDeg <= pointDeg
+    const getPointsWithDeg = (mainDeg, pointDeg) => (mainDeg + 10)%358 >= pointDeg & mainDeg%358 <= pointDeg
 
     function getCurrentElementRotation(el) {
         try {
