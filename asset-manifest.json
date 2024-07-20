@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/logic_landscape/static/css/main.657d8397.css",
-    "main.js": "/logic_landscape/static/js/main.1b0dfc37.js",
+    "main.css": "/logic_landscape/static/css/main.eb1ea632.css",
+    "main.js": "/logic_landscape/static/js/main.15966ad1.js",
     "static/media/Samim-Bold.ttf": "/logic_landscape/static/media/Samim-Bold.58c4bdf1445242c26ebf.ttf",
     "static/media/Samim.ttf": "/logic_landscape/static/media/Samim.abbffc8aa79d149234ba.ttf",
     "static/media/contributer.jpeg": "/logic_landscape/static/media/contributer.caadd19a1986da714c95.jpeg",
     "index.html": "/logic_landscape/index.html",
-    "main.657d8397.css.map": "/logic_landscape/static/css/main.657d8397.css.map",
-    "main.1b0dfc37.js.map": "/logic_landscape/static/js/main.1b0dfc37.js.map"
+    "main.eb1ea632.css.map": "/logic_landscape/static/css/main.eb1ea632.css.map",
+    "main.15966ad1.js.map": "/logic_landscape/static/js/main.15966ad1.js.map"
   },
   "entrypoints": [
-    "static/css/main.657d8397.css",
-    "static/js/main.1b0dfc37.js"
+    "static/css/main.eb1ea632.css",
+    "static/js/main.15966ad1.js"
   ]
 }
