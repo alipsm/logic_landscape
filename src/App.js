@@ -3,6 +3,7 @@ import Dashboard from "./components/dashboard/Dashboard";
 import Multithreading from "./pages/multithreading";
 import Info from "./pages/info";
 import DoesNotSupport from "./components/doesNotSupportPage";
+import Compiler from "./pages/compiler";
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
         <Route path="/dashboard/*" element={<Dashboard />}>
           <Route path="info" element={<Info />} />
           <Route path={"multithreading"} element={<Multithreading />} />
+          <Route path={"compiler"} element={<Compiler />} />
           <Route path="*" element={<Navigate to={"info"} replace/>} />
         </Route>
         <Route path="*" element={<Navigate to={"/dashboard"} replace/>} />
